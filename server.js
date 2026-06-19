@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
 
 // add about route
 server.on('request', (req, res) => {
-  if (req.url === '/about') {
+  if (req.url === 'about') {
     res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('About Page');
   }
